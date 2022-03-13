@@ -1,0 +1,22 @@
+.gradient{
+	background: rgb(18,111,195);
+background: linear-gradient(90deg, rgba(18,111,195,1) 0%, rgba(92,26,179,1) 60%, rgba(172,44,214,1) 100%);
+}
+::-moz-selection { /* Code for Firefox */
+	color: red;
+	background: #00B7EB;
+  }
+  
+  ::selection {
+	color: rgb(43, 47, 43);
+	background: #98a3b6;
+  }
+  .card-img-top.gradient{
+	background: rgb(18,111,195);
+background: linear-gradient(90deg, rgba(18,111,195,1) 0%, rgba(92,26,179,1) 60%, rgba(172,44,214,1) 100%);
+  }
+.text-center.text-lg-start.text-white.mx-4{
+
+	background: rgb(18,111,195);
+background: linear-gradient(90deg, rgba(18,111,195,1) 0%, rgba(92,26,179,1) 60%, rgba(172,44,214,1) 100%);
+  }
