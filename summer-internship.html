@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>GradsIT Summer Internship
+	</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link rel="icon" type="image/x-icon" href="https://academy.gradsit.com/assets/images/favicon.png">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="infinite-slider.css">
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+	<script src="carousel.js"></script>
+	<script src="https://kit.fontawesome.com/417c2f058f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<nav class="navbar fixed-top p-3 navbar-expand-lg navbar-light bg-body shadow-sm">
+		<div class="container">
+			<a class="navbar-brand" href="#"><img src="https://academy.gradsit.com/assets/images/logo-withoutbg.png"
+					height="45vh" width="140vw" alt=""></a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+				aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+				<div class="navbar-nav">
+					<a class="nav-link " href="https://gradsit.com/">Home</a>
+					<a class="nav-link" href="https://gradsit.com/about-us/">About</a>
+					<a href="#" class="btn btn-outline-info mx-lg-3" role="button" data-bs-toggle="modal"
+						data-bs-target="#exampleModal">Apply Now</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content ">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Please Enter Your Details</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body mx-4">
+					<form class="row g-3 needs-validation" method="post" id="frmSubmit" novalidate>
+						<div class="col-lg-12">
+							<label for="validationCustom01" class="form-label">Full Name</label>
+							<input type="text" class="form-control" id="validationCustom01" placeholder="for eg. Ravi"
+								name="Name" required>
+							<div class="valid-feedback">
+								Looks good!
+							</div>
+							<div class="invalid-feedback">
+								Please enter a valid Name
+							</div>
+						</div>
+
+						<div class="col-lg-12">
+							<label for="validationCustomUsername" class="form-label">E-mail Address</label>
+							<div class="input-group has-validation">
+								<input type="email" class="form-control" id="validationCustomUsername"
+									aria-describedby="inputGroupPrepend" placeholder="for eg. Ravi@email.com"
+									name="Email" required>
+								<div class="invalid-feedback">
+									Please enter a valid E-mail
+								</div>
+								<div class="valid-feedback">
+									Looks good!
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-12">
+							<label for="validationCustom03" class="form-label">Mobile Number</label>
+							<input type="text" class="form-control" id="validationCustom03"
+								placeholder="for eg. 723****123" name="Mobile" required>
+							<div class="invalid-feedback">
+								Please provide a valid Mobile Number
+							</div>
+							<div class="valid-feedback">
+								Looks good!
+							</div>
+						</div>
+						<div class="col-lg-12">
+							<label for="validationCustom03" class="form-label">Program</label>
+							<select class="form-select" aria-label="Default select example" name="Program">
+								<option selected>Want to opt for which Program?</option>
+								<option value="1">Campus to Corporate</option>
+								<option value="2">Summer Training</option>
+							</select>
+						</div>
+
+						<div class="col-12 text-center">
+							<button class="btn btn-outline-info" type="submit" id="btnSubmit">Submit</button>
+						</div>
+					</form>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<br>
+	<br>
+	<br>
+	<div class="fixed-bottom d-lg-none">
+		<div class="card">
+			<div class="card-body text-center">
+				Want to get your dream package? <a href="#" class="btn btn-outline-info mx-lg-3" role="button"
+					data-bs-toggle="modal" data-bs-target="#exampleModal">Apply Now</a>
+			</div>
+		</div>
+	</div>
+	<div class="container mt-5">
+		<div class="gradient p-4">
+			<div class="display-6 text-white d-flex justify-content-center">
+				The best way to avoid heat this summer is getting Upskilled!!!
+			</div>
+			<div class="row justify-content-center mt-2">
+				<div class="col-lg-4 p-3">
+					<img src="images/Asset 1.svg" alt="" width="300vw" height="185vh">
+				</div>
+				<div class="col-lg-5 px-4 pt-lg-5 text-white ">
+					We at GradsIT train students with latest technologies
+					according to the inputs from the industries and make
+					them job ready.
+
+					<br>
+					<br>
+					<a href="#" class="btn btn-outline-light justify-content-center mt-lg-3" role="button"
+						data-bs-toggle="modal" data-bs-target="#exampleModal">Apply Now</a>
+				</div>
+			</div>
+
+
+		</div>
+
+		<div class="row  mx-5 justify-content-center p-4 ">
+			<div class="col-lg-3 text-center mt-1 mb-4"><img src="images/student.png" class="pb-2" height="55vh">
+				<br>1000+
+				Students<br>Registered
+			</div>
+			<div class="col-lg-3 text-center mt-1 mb-4"><img src="images/job-loss.png" class="pb-2" height="55vh">
+				<br>1000+ different <br>live projects
+			</div>
+			<div class="col-lg-3 text-center mt-1 mb-4"><img src="images/goal.png" class="pb-2" height="55vh"> <br>400+
+				<br>Paid Internships
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-3 mx-4">
+				<nav id="navbar-example3"
+					class="d-none d-lg-block rounded-3 navbar navbar-light bg-light flex-column align-items-stretch sticky-top p-3 "
+					style="top: 17vh">
+					<nav class="nav nav-pills flex-column ">
+						<a class="nav-link text-black" href="#item-1">Our Programs</a>
+						<nav class="nav nav-pills flex-column">
+							<a class="nav-link ms-3 my-1 text-black" href="#item-1-2">Summer Training</a>
+							<a class="nav-link ms-3 my-1 text-black" href="#item-1-1">Campus to Corporate</a>
+
+						</nav>
+						<a class="nav-link text-black" href="#item-2">Hiring Partners</a>
+						<a class="nav-link text-black" href="#item-3">Partner Institutes</a>
+					</nav>
+				</nav>
+			</div>
+			<div class="col-lg-8">
+				<span class="h4" id="item-1">Courses Offered</span>
+				<hr>
+
+				<span class="h5 text-black-50" id="item-1-2">Summer Training Programs</span>
+				<div class="card-group my-4">
+
+					<div class="card">
+						<img src="https://academy.gradsit.com/assets/images/basic%20java.jpeg" class="card-img-top"
+							alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Learn Basic Programming with Java</h5>
+							<p class="card-text"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+									fill="currentColor" class="bi bi-hourglass-split" viewBox="0 0 16 16">
+									<path
+										d="M2.5 15a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1h-11zm2-13v1c0 .537.12 1.045.337 1.5h6.326c.216-.455.337-.963.337-1.5V2h-7zm3 6.35c0 .701-.478 1.236-1.011 1.492A3.5 3.5 0 0 0 4.5 13s.866-1.299 3-1.48V8.35zm1 0v3.17c2.134.181 3 1.48 3 1.48a3.5 3.5 0 0 0-1.989-3.158C8.978 9.586 8.5 9.052 8.5 8.351z" />
+								</svg> <span class="course-hours mx-1">35 hours</span>
+								<br>
+								<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+									class="bi bi-calendar-plus" viewBox="0 0 16 16">
+									<path
+										d="M8 7a.5.5 0 0 1 .5.5V9H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V10H6a.5.5 0 0 1 0-1h1.5V7.5A.5.5 0 0 1 8 7z" />
+									<path
+										d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+								</svg>
+								<span class="course-hours mx-1">10th of Every Month</span>
+								<br>
+								<a class="btn btn-primary blue-100 mt-2 py-0 text-center"
+									href="https://academy.gradsit.com/view_program?course=Learn%20Basic%20Programming%20with%20Java"
+									role="button">View Program</a>
+							</p>
+
+						</div>
+					</div>
+					<div class="card">
+						<img src="https://academy.gradsit.com/assets/images/pythonc.jpeg" class="card-img-top"
+							alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Python Programming and Data Exploration/Analysis</h5>
+							<p class="card-text"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+									fill="currentColor" class="bi bi-hourglass-split" viewBox="0 0 16 16">
+									<path
+										d="M2.5 15a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1h-11zm2-13v1c0 .537.12 1.045.337 1.5h6.326c.216-.455.337-.963.337-1.5V2h-7zm3 6.35c0 .701-.478 1.236-1.011 1.492A3.5 3.5 0 0 0 4.5 13s.866-1.299 3-1.48V8.35zm1 0v3.17c2.134.181 3 1.48 3 1.48a3.5 3.5 0 0 0-1.989-3.158C8.978 9.586 8.5 9.052 8.5 8.351z" />
+								</svg> <span class="course-hours mx-1">60 hours</span>
+								<br>
+								<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+									class="bi bi-calendar-plus" viewBox="0 0 16 16">
+									<path
+										d="M8 7a.5.5 0 0 1 .5.5V9H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V10H6a.5.5 0 0 1 0-1h1.5V7.5A.5.5 0 0 1 8 7z" />
+									<path
+										d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+								</svg>
+								<span class="course-hours mx-1">25th of Every Month</span>
+								<br>
+								<a class="btn btn-primary blue-100 mt-2 py-0 text-center"
+									href="https://academy.gradsit.com/view_program?course=Python%20Programming%20and%20Data%20Exploration/Analysis"
+									role="button">View Program</a>
+							</p>
+
+						</div>
+					</div>
+				</div>
+				<div class="card-group my-4">
+
+					<div class="card">
+						<img src="https://academy.gradsit.com/assets/images/Project%20Management%20Fundamentals-01.jpg"
+							class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Project Management Fundamentals</h5>
+							<p class="card-text"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+									fill="currentColor" class="bi bi-hourglass-split" viewBox="0 0 16 16">
+									<path
+										d="M2.5 15a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1h-11zm2-13v1c0 .537.12 1.045.337 1.5h6.326c.216-.455.337-.963.337-1.5V2h-7zm3 6.35c0 .701-.478 1.236-1.011 1.492A3.5 3.5 0 0 0 4.5 13s.866-1.299 3-1.48V8.35zm1 0v3.17c2.134.181 3 1.48 3 1.48a3.5 3.5 0 0 0-1.989-3.158C8.978 9.586 8.5 9.052 8.5 8.351z" />
+								</svg> <span class="course-hours mx-1">60 hours</span>
+								<br>
+								<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+									class="bi bi-calendar-plus" viewBox="0 0 16 16">
+									<path
+										d="M8 7a.5.5 0 0 1 .5.5V9H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V10H6a.5.5 0 0 1 0-1h1.5V7.5A.5.5 0 0 1 8 7z" />
+									<path
+										d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+								</svg>
+								<span class="course-hours mx-1">15th of Every Month</span>
+								<br>
+								<a class="btn btn-primary blue-100 mt-2 py-0 text-center"
+									href="https://academy.gradsit.com/view_program?course=Project%20Management%20Fundamentals"
+									role="button">View Program</a>
+							</p>
+
+						</div>
+					</div>
+					<div class="card">
+						<img src="https://academy.gradsit.com/assets/images/service%20management%20fundamentals-01.jpg"
+							class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Service Management Fundamentals</h5>
+							<p class="card-text"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+									fill="currentColor" class="bi bi-hourglass-split" viewBox="0 0 16 16">
+									<path
+										d="M2.5 15a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1h-11zm2-13v1c0 .537.12 1.045.337 1.5h6.326c.216-.455.337-.963.337-1.5V2h-7zm3 6.35c0 .701-.478 1.236-1.011 1.492A3.5 3.5 0 0 0 4.5 13s.866-1.299 3-1.48V8.35zm1 0v3.17c2.134.181 3 1.48 3 1.48a3.5 3.5 0 0 0-1.989-3.158C8.978 9.586 8.5 9.052 8.5 8.351z" />
+								</svg> <span class="course-hours mx-1">80 hours</span>
+								<br>
+								<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+									class="bi bi-calendar-plus" viewBox="0 0 16 16">
+									<path
+										d="M8 7a.5.5 0 0 1 .5.5V9H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V10H6a.5.5 0 0 1 0-1h1.5V7.5A.5.5 0 0 1 8 7z" />
+									<path
+										d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+								</svg>
+								<span class="course-hours mx-1">30th of Every Month</span>
+								<br>
+								<a class="btn btn-primary blue-100 mt-2 py-0 text-center"
+									href="https://academy.gradsit.com/view_program?course=Service%20Management%20Fundamentals"
+									role="button">View Program</a>
+							</p>
+
+						</div>
+					</div>
+				</div>
+				<div class="card-group my-4">
+
+					<div class="card">
+						<img src="https://academy.gradsit.com/assets/images/Cyber%20Security%20Engineer-01.jpg"
+							class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Cyber Security Engineer (Foundation)</h5>
+							<p class="card-text"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+									fill="currentColor" class="bi bi-hourglass-split" viewBox="0 0 16 16">
+									<path
+										d="M2.5 15a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1h-11zm2-13v1c0 .537.12 1.045.337 1.5h6.326c.216-.455.337-.963.337-1.5V2h-7zm3 6.35c0 .701-.478 1.236-1.011 1.492A3.5 3.5 0 0 0 4.5 13s.866-1.299 3-1.48V8.35zm1 0v3.17c2.134.181 3 1.48 3 1.48a3.5 3.5 0 0 0-1.989-3.158C8.978 9.586 8.5 9.052 8.5 8.351z" />
+								</svg> <span class="course-hours mx-1">60 hours</span>
+								<br>
+								<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+									class="bi bi-calendar-plus" viewBox="0 0 16 16">
+									<path
+										d="M8 7a.5.5 0 0 1 .5.5V9H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V10H6a.5.5 0 0 1 0-1h1.5V7.5A.5.5 0 0 1 8 7z" />
+									<path
+										d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+								</svg>
+								<span class="course-hours mx-1">10th of Every Month</span>
+								<br>
+								<a class="btn btn-primary blue-100 mt-2 py-0 text-center"
+									href="https://academy.gradsit.com/view_program?course=Cyber%20Security%20Engineer%20(Foundation)"
+									role="button">View Program</a>
+							</p>
+
+						</div>
+					</div>
+					<div class="card">
+						<img src="https://academy.gradsit.com/assets/images/budding%20project%20managers-01.jpg"
+							class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Budding Project Managers</h5>
+							<p class="card-text"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+									fill="currentColor" class="bi bi-hourglass-split" viewBox="0 0 16 16">
+									<path
+										d="M2.5 15a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1h-11zm2-13v1c0 .537.12 1.045.337 1.5h6.326c.216-.455.337-.963.337-1.5V2h-7zm3 6.35c0 .701-.478 1.236-1.011 1.492A3.5 3.5 0 0 0 4.5 13s.866-1.299 3-1.48V8.35zm1 0v3.17c2.134.181 3 1.48 3 1.48a3.5 3.5 0 0 0-1.989-3.158C8.978 9.586 8.5 9.052 8.5 8.351z" />
+								</svg> <span class="course-hours mx-1">80 hours</span>
+								<br>
+								<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+									class="bi bi-calendar-plus" viewBox="0 0 16 16">
+									<path
+										d="M8 7a.5.5 0 0 1 .5.5V9H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V10H6a.5.5 0 0 1 0-1h1.5V7.5A.5.5 0 0 1 8 7z" />
+									<path
+										d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+								</svg>
+								<span class="course-hours mx-1">5th of Every Month</span>
+								<br>
+								<a class="btn btn-primary blue-100 mt-2 py-0 text-center"
+									href="https://academy.gradsit.com/view_program?course=Budding%20Project%20Managers"
+									role="button">View Program</a>
+							</p>
+
+						</div>
+					</div>
+				</div>
+				<div class="card-group my-4">
+
+					<div class="card">
+						<img src="https://academy.gradsit.com/assets/images/blockchain%20for%20healthcare%20training-01.jpg"
+							class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Blockchain for Healthcare Training</h5>
+							<p class="card-text"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+									fill="currentColor" class="bi bi-hourglass-split" viewBox="0 0 16 16">
+									<path
+										d="M2.5 15a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1h-11zm2-13v1c0 .537.12 1.045.337 1.5h6.326c.216-.455.337-.963.337-1.5V2h-7zm3 6.35c0 .701-.478 1.236-1.011 1.492A3.5 3.5 0 0 0 4.5 13s.866-1.299 3-1.48V8.35zm1 0v3.17c2.134.181 3 1.48 3 1.48a3.5 3.5 0 0 0-1.989-3.158C8.978 9.586 8.5 9.052 8.5 8.351z" />
+								</svg> <span class="course-hours mx-1">60 hours</span>
+								<br>
+								<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+									class="bi bi-calendar-plus" viewBox="0 0 16 16">
+									<path
+										d="M8 7a.5.5 0 0 1 .5.5V9H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V10H6a.5.5 0 0 1 0-1h1.5V7.5A.5.5 0 0 1 8 7z" />
+									<path
+										d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+								</svg>
+								<span class="course-hours mx-1">25th of Every Month</span>
+								<br>
+								<a class="btn btn-primary blue-100 mt-2 py-0 text-center"
+									href="https://academy.gradsit.com/view_program?course=Blockchain%20for%20Healthcare%20Training"
+									role="button">View Program</a>
+							</p>
+
+						</div>
+					</div>
+					<div class="card">
+						<img src="https://academy.gradsit.com/assets/images/machine%20learnig-01.jpg"
+							class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Machine Learning with Neural Network and Deep Learning</h5>
+							<p class="card-text"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+									fill="currentColor" class="bi bi-hourglass-split" viewBox="0 0 16 16">
+									<path
+										d="M2.5 15a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1h-11zm2-13v1c0 .537.12 1.045.337 1.5h6.326c.216-.455.337-.963.337-1.5V2h-7zm3 6.35c0 .701-.478 1.236-1.011 1.492A3.5 3.5 0 0 0 4.5 13s.866-1.299 3-1.48V8.35zm1 0v3.17c2.134.181 3 1.48 3 1.48a3.5 3.5 0 0 0-1.989-3.158C8.978 9.586 8.5 9.052 8.5 8.351z" />
+								</svg> <span class="course-hours mx-1">60 hours</span>
+								<br>
+								<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+									class="bi bi-calendar-plus" viewBox="0 0 16 16">
+									<path
+										d="M8 7a.5.5 0 0 1 .5.5V9H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V10H6a.5.5 0 0 1 0-1h1.5V7.5A.5.5 0 0 1 8 7z" />
+									<path
+										d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+								</svg>
+								<span class="course-hours mx-1">20th of Every Month</span>
+								<br>
+								<a class="btn btn-primary blue-100 mt-2 py-0 text-center"
+									href="https://academy.gradsit.com/view_program?course=Machine%20Learning%20with%20Neural%20Network%20and%20Deep%20Learning"
+									role="button">View Program</a>
+							</p>
+
+						</div>
+					</div>
+				</div>
+				<div class="card-group my-4">
+
+					<div class="card">
+						<img src="https://academy.gradsit.com/assets/images/cloud%20native%20application%20fundamental-01.jpg"
+							class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Cloud native application fundamentals</h5>
+							<p class="card-text"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+									fill="currentColor" class="bi bi-hourglass-split" viewBox="0 0 16 16">
+									<path
+										d="M2.5 15a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1h-11zm2-13v1c0 .537.12 1.045.337 1.5h6.326c.216-.455.337-.963.337-1.5V2h-7zm3 6.35c0 .701-.478 1.236-1.011 1.492A3.5 3.5 0 0 0 4.5 13s.866-1.299 3-1.48V8.35zm1 0v3.17c2.134.181 3 1.48 3 1.48a3.5 3.5 0 0 0-1.989-3.158C8.978 9.586 8.5 9.052 8.5 8.351z" />
+								</svg> <span class="course-hours mx-1">60 hours</span>
+								<br>
+								<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+									class="bi bi-calendar-plus" viewBox="0 0 16 16">
+									<path
+										d="M8 7a.5.5 0 0 1 .5.5V9H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V10H6a.5.5 0 0 1 0-1h1.5V7.5A.5.5 0 0 1 8 7z" />
+									<path
+										d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+								</svg>
+								<span class="course-hours mx-1">10th of Every Month</span>
+								<br>
+								<a class="btn btn-primary blue-100 mt-2 py-0 text-center"
+									href="https://academy.gradsit.com/view_program?course=Cloud%20native%20application%20fundamentals"
+									role="button">View Program</a>
+							</p>
+
+						</div>
+					</div>
+					<div class="card">
+						<img src="https://academy.gradsit.com/assets/images/analysing%20web%20and%20twitter%20traffic-01.jpg"
+							class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Analysing web and twitter traffic with Big Data technologies</h5>
+							<p class="card-text"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+									fill="currentColor" class="bi bi-hourglass-split" viewBox="0 0 16 16">
+									<path
+										d="M2.5 15a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1h-11zm2-13v1c0 .537.12 1.045.337 1.5h6.326c.216-.455.337-.963.337-1.5V2h-7zm3 6.35c0 .701-.478 1.236-1.011 1.492A3.5 3.5 0 0 0 4.5 13s.866-1.299 3-1.48V8.35zm1 0v3.17c2.134.181 3 1.48 3 1.48a3.5 3.5 0 0 0-1.989-3.158C8.978 9.586 8.5 9.052 8.5 8.351z" />
+								</svg> <span class="course-hours mx-1">60 hours</span>
+								<br>
+								<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+									class="bi bi-calendar-plus" viewBox="0 0 16 16">
+									<path
+										d="M8 7a.5.5 0 0 1 .5.5V9H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V10H6a.5.5 0 0 1 0-1h1.5V7.5A.5.5 0 0 1 8 7z" />
+									<path
+										d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+								</svg>
+								<span class="course-hours mx-1">1st of Every Month</span>
+								<br>
+								<a class="btn btn-primary blue-100 mt-2 py-0 text-center"
+									href="https://academy.gradsit.com/view_program?course=Analysing%20web%20and%20twitter%20traffic%20with%20Big%20Data%20technologies"
+									role="button">View Program</a>
+							</p>
+
+						</div>
+					</div>
+				</div>
+				<div class="card-group my-4">
+
+					<div class="card">
+						<img src="https://academy.gradsit.com/assets/images/Project%20Based%20Learning-01.jpg"
+							class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Project Based Learning (Project By Grads IT)</h5>
+							<p class="card-text"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+									fill="currentColor" class="bi bi-hourglass-split" viewBox="0 0 16 16">
+									<path
+										d="M2.5 15a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1h-11zm2-13v1c0 .537.12 1.045.337 1.5h6.326c.216-.455.337-.963.337-1.5V2h-7zm3 6.35c0 .701-.478 1.236-1.011 1.492A3.5 3.5 0 0 0 4.5 13s.866-1.299 3-1.48V8.35zm1 0v3.17c2.134.181 3 1.48 3 1.48a3.5 3.5 0 0 0-1.989-3.158C8.978 9.586 8.5 9.052 8.5 8.351z" />
+								</svg> <span class="course-hours mx-1">100 hours</span>
+								<br>
+								<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+									class="bi bi-calendar-plus" viewBox="0 0 16 16">
+									<path
+										d="M8 7a.5.5 0 0 1 .5.5V9H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V10H6a.5.5 0 0 1 0-1h1.5V7.5A.5.5 0 0 1 8 7z" />
+									<path
+										d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+								</svg>
+								<span class="course-hours mx-1">20th of Every Month</span>
+								<br>
+								<a class="btn btn-primary blue-100 mt-2 py-0 text-center"
+									href="https://academy.gradsit.com/view_program?course=Project%20Based%20Learning%20(Project%20By%20Grads%20IT)"
+									role="button">View Program</a>
+							</p>
+
+						</div>
+					</div>
+					<div class="card">
+						<img src="https://academy.gradsit.com/assets/images/Python%20Programming%20and%20Web-01.jpg"
+							class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Python Programming and Web Development with Django</h5>
+							<p class="card-text"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+									fill="currentColor" class="bi bi-hourglass-split" viewBox="0 0 16 16">
+									<path
+										d="M2.5 15a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1h-11zm2-13v1c0 .537.12 1.045.337 1.5h6.326c.216-.455.337-.963.337-1.5V2h-7zm3 6.35c0 .701-.478 1.236-1.011 1.492A3.5 3.5 0 0 0 4.5 13s.866-1.299 3-1.48V8.35zm1 0v3.17c2.134.181 3 1.48 3 1.48a3.5 3.5 0 0 0-1.989-3.158C8.978 9.586 8.5 9.052 8.5 8.351z" />
+								</svg> <span class="course-hours mx-1">75 hours</span>
+								<br>
+								<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+									class="bi bi-calendar-plus" viewBox="0 0 16 16">
+									<path
+										d="M8 7a.5.5 0 0 1 .5.5V9H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V10H6a.5.5 0 0 1 0-1h1.5V7.5A.5.5 0 0 1 8 7z" />
+									<path
+										d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+								</svg>
+								<span class="course-hours mx-1">5th of Every Month</span>
+								<br>
+								<a class="btn btn-primary blue-100 mt-2 py-0 text-center"
+									href="https://academy.gradsit.com/view_program?course=Python%20Programming%20and%20Web%20Development%20with%20Django"
+									role="button">View Program</a>
+							</p>
+
+						</div>
+					</div>
+				</div>
+				<div class="card-group my-4">
+
+					<div class="card">
+						<img src="https://academy.gradsit.com/assets/images/Advance%20Java%20with%20Project-01.jpg"
+							class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Advance Java With Project</h5>
+							<p class="card-text"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+									fill="currentColor" class="bi bi-hourglass-split" viewBox="0 0 16 16">
+									<path
+										d="M2.5 15a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1h-11zm2-13v1c0 .537.12 1.045.337 1.5h6.326c.216-.455.337-.963.337-1.5V2h-7zm3 6.35c0 .701-.478 1.236-1.011 1.492A3.5 3.5 0 0 0 4.5 13s.866-1.299 3-1.48V8.35zm1 0v3.17c2.134.181 3 1.48 3 1.48a3.5 3.5 0 0 0-1.989-3.158C8.978 9.586 8.5 9.052 8.5 8.351z" />
+								</svg> <span class="course-hours mx-1">75 hours</span>
+								<br>
+								<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+									class="bi bi-calendar-plus" viewBox="0 0 16 16">
+									<path
+										d="M8 7a.5.5 0 0 1 .5.5V9H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V10H6a.5.5 0 0 1 0-1h1.5V7.5A.5.5 0 0 1 8 7z" />
+									<path
+										d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+								</svg>
+								<span class="course-hours mx-1">15th of Every Month</span>
+								<br>
+								<a class="btn btn-primary blue-100 mt-2 py-0 text-center"
+									href="https://academy.gradsit.com/view_program?course=Advance%20Java%20With%20Project"
+									role="button">View Program</a>
+							</p>
+
+						</div>
+					</div>
+					<div class="card">
+						<img src="https://academy.gradsit.com/assets/images/Machine%20Learning%20%20tensorflow.jpg"
+							class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Machine Learning and Application Development with TensorFlow and
+								keras</h5>
+							<p class="card-text"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+									fill="currentColor" class="bi bi-hourglass-split" viewBox="0 0 16 16">
+									<path
+										d="M2.5 15a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1h-11zm2-13v1c0 .537.12 1.045.337 1.5h6.326c.216-.455.337-.963.337-1.5V2h-7zm3 6.35c0 .701-.478 1.236-1.011 1.492A3.5 3.5 0 0 0 4.5 13s.866-1.299 3-1.48V8.35zm1 0v3.17c2.134.181 3 1.48 3 1.48a3.5 3.5 0 0 0-1.989-3.158C8.978 9.586 8.5 9.052 8.5 8.351z" />
+								</svg> <span class="course-hours mx-1">75 hours</span>
+								<br>
+								<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+									class="bi bi-calendar-plus" viewBox="0 0 16 16">
+									<path
+										d="M8 7a.5.5 0 0 1 .5.5V9H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V10H6a.5.5 0 0 1 0-1h1.5V7.5A.5.5 0 0 1 8 7z" />
+									<path
+										d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+								</svg>
+								<span class="course-hours mx-1">30th of Every Month</span>
+								<br>
+								<a class="btn btn-primary blue-100 mt-2 py-0 text-center"
+									href="https://academy.gradsit.com/view_program?course=Machine%20Learning%20and%20Application%20Development%20with%20TensorFlow%20and%20keras"
+									role="button">View Program</a>
+							</p>
+
+						</div>
+					</div>
+				</div>
+
+				<span class="h5 text-black-50" id="item-1-1">Campus to Corporate</span>
+				<div class="card-group my-4">
+					<div class="card">
+						<img src="images/Software Engineer (Java).jpg" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Software Engineer (Java)</h5>
+							<p class="card-text">
+								<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+									class="bi bi-hourglass-split" viewBox="0 0 16 16">
+									<path
+										d="M2.5 15a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1h-11zm2-13v1c0 .537.12 1.045.337 1.5h6.326c.216-.455.337-.963.337-1.5V2h-7zm3 6.35c0 .701-.478 1.236-1.011 1.492A3.5 3.5 0 0 0 4.5 13s.866-1.299 3-1.48V8.35zm1 0v3.17c2.134.181 3 1.48 3 1.48a3.5 3.5 0 0 0-1.989-3.158C8.978 9.586 8.5 9.052 8.5 8.351z" />
+								</svg> <span class="course-hours mx-1">360 hours</span>
+								<br>
+								<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+									class="bi bi-calendar-plus" viewBox="0 0 16 16">
+									<path
+										d="M8 7a.5.5 0 0 1 .5.5V9H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V10H6a.5.5 0 0 1 0-1h1.5V7.5A.5.5 0 0 1 8 7z" />
+									<path
+										d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+								</svg>
+								<span class="course-hours mx-1">1st of Every Month</span>
+								<br>
+								<a class="btn btn-primary blue-100 mt-2 py-0 text-center"
+									href="https://academy.gradsit.com/view_program?course=Software%20Engineer%20(Java)"
+									role="button">View Program</a>
+							</p>
+
+						</div>
+					</div>
+					<div class="card">
+						<img src="https://academy.gradsit.com/assets/images/Software%20Engineer.jpg"
+							class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Software Engineer (Python)</h5>
+							<p class="card-text">
+								<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+									class="bi bi-hourglass-split" viewBox="0 0 16 16">
+									<path
+										d="M2.5 15a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1h-11zm2-13v1c0 .537.12 1.045.337 1.5h6.326c.216-.455.337-.963.337-1.5V2h-7zm3 6.35c0 .701-.478 1.236-1.011 1.492A3.5 3.5 0 0 0 4.5 13s.866-1.299 3-1.48V8.35zm1 0v3.17c2.134.181 3 1.48 3 1.48a3.5 3.5 0 0 0-1.989-3.158C8.978 9.586 8.5 9.052 8.5 8.351z" />
+								</svg> <span class="course-hours mx-1">360 hours</span>
+								<br>
+								<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+									class="bi bi-calendar-plus" viewBox="0 0 16 16">
+									<path
+										d="M8 7a.5.5 0 0 1 .5.5V9H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V10H6a.5.5 0 0 1 0-1h1.5V7.5A.5.5 0 0 1 8 7z" />
+									<path
+										d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+								</svg>
+								<span class="course-hours mx-1">25th of Every Month</span>
+								<br>
+								<a class="btn btn-primary blue-100 mt-2 py-0 text-center"
+									href="https://academy.gradsit.com/view_program?course=Software%20Engineer%20(Python)"
+									role="button">View Program</a>
+							</p>
+
+						</div>
+					</div>
+
+
+				</div>
+				<div class="card-group my-4">
+					<div class="card">
+						<img src="https://academy.gradsit.com/assets/images/Big%20Data%20Developer-01.jpg"
+							class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Big Data Developer</h5>
+							<p class="card-text"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+									fill="currentColor" class="bi bi-hourglass-split" viewBox="0 0 16 16">
+									<path
+										d="M2.5 15a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1h-11zm2-13v1c0 .537.12 1.045.337 1.5h6.326c.216-.455.337-.963.337-1.5V2h-7zm3 6.35c0 .701-.478 1.236-1.011 1.492A3.5 3.5 0 0 0 4.5 13s.866-1.299 3-1.48V8.35zm1 0v3.17c2.134.181 3 1.48 3 1.48a3.5 3.5 0 0 0-1.989-3.158C8.978 9.586 8.5 9.052 8.5 8.351z" />
+								</svg> <span class="course-hours mx-1">600 hours</span>
+								<br>
+								<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+									class="bi bi-calendar-plus" viewBox="0 0 16 16">
+									<path
+										d="M8 7a.5.5 0 0 1 .5.5V9H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V10H6a.5.5 0 0 1 0-1h1.5V7.5A.5.5 0 0 1 8 7z" />
+									<path
+										d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+								</svg>
+								<span class="course-hours mx-1">10th of Every Month</span>
+								<br>
+								<a class="btn btn-primary blue-100 mt-2 py-0 text-center"
+									href="https://academy.gradsit.com/view_program?course=Big%20data%20developer"
+									role="button">View Program</a>
+							</p>
+
+						</div>
+					</div>
+					<div class="card">
+						<img src="https://academy.gradsit.com/assets/images/Cyber%20Security%20Engineer%20UG%20program-01.jpg"
+							class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Cyber Security Engineer</h5>
+							<p class="card-text"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+									fill="currentColor" class="bi bi-hourglass-split" viewBox="0 0 16 16">
+									<path
+										d="M2.5 15a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1h-11zm2-13v1c0 .537.12 1.045.337 1.5h6.326c.216-.455.337-.963.337-1.5V2h-7zm3 6.35c0 .701-.478 1.236-1.011 1.492A3.5 3.5 0 0 0 4.5 13s.866-1.299 3-1.48V8.35zm1 0v3.17c2.134.181 3 1.48 3 1.48a3.5 3.5 0 0 0-1.989-3.158C8.978 9.586 8.5 9.052 8.5 8.351z" />
+								</svg> <span class="course-hours mx-1">540 hours</span>
+								<br>
+								<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+									class="bi bi-calendar-plus" viewBox="0 0 16 16">
+									<path
+										d="M8 7a.5.5 0 0 1 .5.5V9H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V10H6a.5.5 0 0 1 0-1h1.5V7.5A.5.5 0 0 1 8 7z" />
+									<path
+										d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+								</svg>
+								<span class="course-hours mx-1">20th of Every Month</span>
+								<br>
+								<a class="btn btn-primary blue-100 mt-2 py-0 text-center"
+									href="https://academy.gradsit.com/view_program?course=Cyber%20Security%20Engineer"
+									role="button">View Program</a>
+							</p>
+
+						</div>
+					</div>
+				</div>
+				<div class="text-center mb-2">
+					<a class="btn btn-outline-info" href="index.html" role="button">More Campus to Corporate
+						Programs</a>
+
+				</div>
+				<div class="hiring">
+					<span class="h4" id="item-2">Hiring Partners</span>
+					<hr>
+					<section class="customer-logos slider m-5">
+						<div class="slide"><img src="images/companies/1.svg.png" height="50vw" width="200vw"></div>
+						<div class="slide"><img src="images/companies/2.png" height="50vw" width="200vw"></div>
+						<div class="slide"><img src="images/companies/3.png" height="50vw" width="200vw"></div>
+						<div class="slide"><img src="images/companies/4.png" height="50vw" width="200vw"></div>
+						<div class="slide"><img src="images/companies/5.png" height="50vw" width="200vw"></div>
+						<div class="slide"><img src="images/companies/6.png" height="50vw" width="200vw"></div>
+						<div class="slide"><img src="images/companies/7.jpg" height="50vw" width="200vw"></div>
+						<div class="slide"><img src="images/companies/8.jpg" height="50vw" width="200vw"></div>
+						<div class="slide"><img src="images/companies/9.png" height="50vw" width="200vw"></div>
+					</section>
+				</div>
+				<div class="academic">
+					<span class="h4" id="item-3">Partner Institutes</span>
+					<hr>
+					<section class="customer-logos slider m-5 ">
+						<div class="slide"><img src="https://academy.gradsit.com/assets/images/new-mit-logo.png"
+								height="100vh" width="150vw"></div>
+						<div class="slide"><img
+								src="https://academy.gradsit.com/assets/images/Rns%20institute%20of%20technology.jpg"
+								height="100vh" width="150vw"></div>
+						<div class="slide"><img
+								src="https://academy.gradsit.com/assets/images/-%20MLV%20textile%20and%20engineering%20college.jpg"
+								height="100vh" width="150vw"></div>
+						<div class="slide"><img
+								src="https://academy.gradsit.com/assets/images/AISSMS%20College%20of%20Engineering,%20Pune.png"
+								height="100vh" width="300vw"></div>
+						<div class="slide"><img
+								src="https://academy.gradsit.com/assets/images/ambalika-home-logo-300x291.png"
+								height="100vh" width="150vw"></div>
+						<div class="slide"><img
+								src="https://academy.gradsit.com/assets/images/220px-Integral_University,_Lucknow_logo.png"
+								height="100vh" width="150vw"></div>
+						<div class="slide"><img
+								src="https://academy.gradsit.com/assets/images/1200px-BITS_Pilani-Logo.svg.png"
+								height="100vh" width="150vw"></div>
+						<div class="slide"><img src="https://academy.gradsit.com/assets/images/birla-logo.png"
+								height="100vh" width="150vw"></div>
+						<div class="slide"><img src="https://academy.gradsit.com/assets/images/ASM.png" height="100vh"
+								width="100vh"></div>
+						<div class="slide"><img
+								src="https://academy.gradsit.com/assets/images/Dr%20Ambedkar%20Institute%20of%20Technology,%20Bengaluru,%20Karnataka.jpg"
+								height="100vh" width="150vw"></div>
+						<div class="slide"><img
+								src="https://academy.gradsit.com/assets/images/Guru_Tegh_Bahadur_Institute_of_Technology_logo.png"
+								height="100vh" width="150vw"></div>
+						<div class="slide"><img
+								src="https://academy.gradsit.com/assets/images/Government%20engineering%20college%20of%20modasa,%20%20Gajan,%20Gujarat.jpg"
+								height="100vh" width="150vw"></div>
+						<div class="slide"><img
+								src="https://academy.gradsit.com/assets/images/K.L.N.%20College%20Of%20Information%20Technology.jpg"
+								height="100vh" width="150vw"></div>
+						<div class="slide"><img src="https://academy.gradsit.com/assets/images/kiet.png" height="100vh"
+								width="150vw"></div>
+					</section>
+				</div>
+			</div>
+		</div>
+
+		<!-- row end -->
+		<footer class="text-center text-lg-start text-white mx-4">
+			<!-- Grid container -->
+			<div class="container p-4 pb-0">
+				<!-- Section: Links -->
+				<section class="">
+					<!--Grid row-->
+					<div class="row">
+						<!-- Grid column -->
+						<div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+							<h6 class="text-uppercase mb-4 font-weight-bold">
+								Grads IT Solutions
+							</h6>
+							<p>
+								Grads IT is an innovator in Big Data, Cloud, Security, IoT and Professional Services
+							</p>
+						</div>
+						<!-- Grid column -->
+
+						<hr class="w-100 clearfix d-md-none" />
+
+						<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+							<h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+							<p>
+								<a class="text-white" href="https://academy.gradsit.com/"
+									style="text-decoration: none">Academy</a>
+							</p>
+							<p>
+								<a class="text-white" href="https://gradsit.com/electric-mobility/"
+									style="text-decoration: none">Electric Mobility</a>
+							</p>
+							<p>
+								<a class="text-white" href="https://gradsit.com/enterprise-solutions-consulting/"
+									style="text-decoration: none">Enterprise Solutions,
+									Consulting</a>
+							</p>
+							<p>
+								<a class="text-white" href="https://gradsit.com/global-supply-chain-management/"
+									style="text-decoration: none">Global Supply Chain
+									management</a>
+							</p>
+						</div>
+						<!-- Grid column -->
+
+						<hr class="w-100 clearfix d-md-none" />
+
+						<!-- Grid column -->
+						<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+							<h6 class="text-uppercase mb-4 font-weight-bold">
+								Useful links
+							</h6>
+							<p>
+								<a class="text-white" href="https://gradsit.com/about-us/"
+									style="text-decoration: none">About Us</a>
+							</p>
+							<p>
+								<a class="text-white" href="https://gradsit.com/jobs/"
+									style="text-decoration: none">Career</a>
+							</p>
+							<p>
+								<a class="text-white" href="https://gradsit.com/contact/"
+									style="text-decoration: none">Contact</a>
+							</p>
+						</div>
+
+						<!-- Grid column -->
+						<hr class="w-100 clearfix d-md-none" />
+
+						<!-- Grid column -->
+						<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+							<h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+							<p><i class="fas fa-home mr-3"></i> S49/37,
+								DLF Phase-3,
+								Gurugram, Haryana-122002</p>
+							<p><i class="fas fa-envelope mr-3"></i> support@gradsit.com</p>
+							<p><i class="fas fa-phone mr-3"></i> +91 124 4388493</p>
+
+						</div>
+						<!-- Grid column -->
+					</div>
+					<!--Grid row-->
+				</section>
+				<!-- Section: Links -->
+
+				<hr class="my-3">
+
+				<!-- Section: Copyright -->
+				<section class="p-3 pt-0">
+					<div class="row d-flex align-items-center">
+						<!-- Grid column -->
+						<div class="col-md-7 col-lg-8 text-center text-md-start">
+							<!-- Copyright -->
+							<div class="p-3">
+								© 2022 Copyright:
+								<a class="text-white" href="https://gradsit.com" style="text-decoration: none">
+									Grads IT Solutions Private Limited
+								</a>
+							</div>
+							<!-- Copyright -->
+						</div>
+						<!-- Grid column -->
+
+						<!-- Grid column -->
+						<div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+							<!-- Facebook -->
+							<a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i
+									class="fab fa-facebook-f"></i></a>
+
+							<!-- Twitter -->
+							<a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i
+									class="fab fa-twitter"></i></a>
+
+							<!-- Google -->
+							<a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i
+									class="fab fa-google"></i></a>
+
+							<!-- Instagram -->
+							<a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i
+									class="fab fa-instagram"></i></a>
+						</div>
+						<!-- Grid column -->
+					</div>
+				</section>
+				<!-- Section: Copyright -->
+			</div>
+			<!-- Grid container -->
+		</footer>
+
+
+
+
+
+
+
+
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+		crossorigin="anonymous"></script>
+	<script>
+		// Example starter JavaScript for disabling form submissions if there are invalid fields
+		(function () {
+			'use strict'
+
+			// Fetch all the forms we want to apply custom Bootstrap validation styles to
+			var forms = document.querySelectorAll('.needs-validation')
+
+			// Loop over them and prevent submission
+			Array.prototype.slice.call(forms)
+				.forEach(function (form) {
+					form.addEventListener('submit', function (event) {
+						if (!form.checkValidity()) {
+							event.preventDefault()
+							event.stopPropagation()
+						}
+
+						form.classList.add('was-validated')
+					}, false)
+				})
+		})()
+	</script>
+	<script>
+		jQuery('#frmSubmit').on('submit', function (e) {
+			e.preventDefault();
+			jQuery.ajax({
+				url: 'https://script.google.com/macros/s/AKfycbzXM-26dezICv_1WEkpCCAQm6Ng3haDJNjj6gJ_zKiHVqp-Bg9OUqzI_ve9j3azuQl39g/exec',
+				type: 'post',
+				data: jQuery('#frmSubmit').serialize(),
+				success: function (result) {
+					console.log("Success");
+					//window.location.href='';
+				}
+			});
+		});
+	</script>
+</body>
+
+</html>
